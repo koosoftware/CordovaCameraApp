@@ -176,9 +176,10 @@ var app = {
           height: 240,
         },
         capture: {
-          width: 320,
-          height: 240,
+          width: 640,
+          height: 480,
         },
+        deviceId: 2003,
         use: "data",
         fps: 30,
         flashMode: this.flash,
