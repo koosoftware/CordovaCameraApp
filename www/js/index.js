@@ -176,8 +176,8 @@ var app = {
           height: 240,
         },
         capture: {
-          width: 640,
-          height: 480,
+          width: 1280,
+          height: 720,
         },
         deviceId: 2003,
         use: "data",
