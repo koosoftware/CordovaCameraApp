@@ -34,8 +34,8 @@ var app = {
   // function, we must explicitly call 'app.receivedEvent(...);'
   onDeviceReady: function () {
     app.receivedEvent("deviceready");
-    app.onPlay();
-    app.onGetDeviceList();
+    //app.onPlay();
+    //app.onGetDeviceList();
   },
   // Update DOM on a Received Event
   receivedEvent: function (id) {
@@ -170,6 +170,7 @@ var app = {
   onPlay: function () {
     console.log("play");
     if (window.plugin.CanvasCamera) {
+      var self = this;
       var options = {
         canvas: {
           width: 320,
@@ -196,6 +197,7 @@ var app = {
           console.log("[CanvasCamera start]", "data", data);
         }
       );
+      self.onGetDeviceList();
     }
   },
   flip: {},
