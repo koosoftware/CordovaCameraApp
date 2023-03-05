@@ -49,6 +49,12 @@ canvas.raster {
   position: absolute;
 }
 
+div.inputDeviceId {
+  right: 0;
+  bottom: 70px;
+  position:absolute;
+}
+
 /* Actions */
 div.actions {
   right: 0;

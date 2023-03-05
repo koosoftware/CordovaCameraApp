@@ -146,6 +146,8 @@ var app = {
           self.currentDevice = data;
           if (isShowPopup) {
             alert(JSON.stringify(data));
+
+            self.onGetDeviceList();
           }
         }
       );
@@ -171,6 +173,9 @@ var app = {
     console.log("play");
     if (window.plugin.CanvasCamera) {
       var self = this;
+
+      var myDeviceId = document.getElementById("deviceId").value;
+
       var options = {
         canvas: {
           width: 320,
@@ -180,7 +185,7 @@ var app = {
           width: 1280,
           height: 720,
         },
-        deviceId: 2003,
+        deviceId: myDeviceId,
         use: "data",
         fps: 30,
         flashMode: this.flash,
